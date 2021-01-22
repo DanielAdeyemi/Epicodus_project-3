@@ -1,7 +1,9 @@
 function roboger(number) {
   const array = [];
   for (let i = 0; i <= number; i++) {
-    if (/1+/.test(i)) {
+    if (/2+/.test(i)) {
+      array.push(' "Boop!"')
+    } else if (/1+/.test(i)) {
       array.push(' "Beep!"')
     } else {
       array.push(` ${i}`);
