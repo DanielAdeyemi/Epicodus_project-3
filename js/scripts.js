@@ -1,8 +1,8 @@
-function roboger(number) {
+function roboger(number, name) {
   const array = [];
   for (let i = 0; i <= number; i++) {
     if (/3+/.test(i)) {
-      array.push(' "Won\'t you be my neighbor?"')
+      array.push(` "Won't you be my neighbor, ${name}?"`)
     } else if (/2+/.test(i)) {
       array.push(' "Boop!"')
     } else if (/1+/.test(i)) {
@@ -14,11 +14,11 @@ function roboger(number) {
   return array;
 }
 
-function robogerReverse(number) {
+function robogerReverse(number, name) {
   const array = [];
   for (let i = number; i >= 0; i--) {
     if (/3+/.test(i)) {
-      array.push(' "Won\'t you be my neighbor?"')
+      array.push(` "Won't you be my neighbor, ${name}?"`)
     } else if (/2+/.test(i)) {
       array.push(' Boop!');
     } else if (/1+/.test(i)) {
@@ -38,21 +38,21 @@ $(document).ready(function() {
     $('#first').hide();
     $('#outName').text(name);
     $('.hidden').show();
-  });
 
-  $('#main').click(function() {
-    event.preventDefault();
-    const input = parseInt($('#input').val());
-    const output = roboger(input);
-    //$('form')[0].reset();
-    $('.output').text(output);
-  });
+    $('#main').click(function() {
+      event.preventDefault();
+      const input = parseInt($('#input').val());
+      const output = roboger(input, name);
+      //$('form')[0].reset();
+      $('.output').text(output);
+    });
 
-  $('#reverse').click(function() {
-    event.preventDefault();
-    const input = parseInt($('#input').val());
-    const output = robogerReverse(input);
-    //$('form')[0].reset();
-    $('.output').text(output);
+    $('#reverse').click(function() {
+      event.preventDefault();
+      const input = parseInt($('#input').val());
+      const output = robogerReverse(input, name);
+      //$('form')[0].reset();
+      $('.output').text(output);
+    });
   });
 });
