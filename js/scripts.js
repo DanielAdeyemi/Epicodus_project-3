@@ -32,6 +32,14 @@ function robogerReverse(number) {
 
 
 $(document).ready(function() {
+  $('#first').submit(function() {
+    event.preventDefault();
+    const name = $('#name').val();
+    $('#first').hide();
+    $('#outName').text(name);
+    $('.hidden').show();
+  });
+
   $('#main').click(function() {
     event.preventDefault();
     const input = parseInt($('#input').val());

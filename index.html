@@ -13,10 +13,20 @@
 
 <body>
   <div class="container">
+    <form id="first">
+      <div class="mb-3">
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Enter your name, please" autocomplete="off" required>
+        <button type="button submit" class="btn btn-primary" id="userName">Let's go</button>
+      </div>
+    </form>
     <form>
-      <input type="number" name="number" id="input" min="1" placeholder="Input your number here" autofocus autocomplete="off" step="1" required>
-      <button type="button submit" class="btn btn-primary" id="main">Play</button>
-      <button type="button submit" class="btn btn-success" id="reverse">Reverse</button>
+      <div class="mb-3 hidden">
+        <p>Hi,<span id="outName"></span>! Now it's time to check out some magic. Please, insert any number in a form below.</p>
+        <input type="number" name="number" id="input" min="1" placeholder="Input your number here" autofocus autocomplete="off" step="1" required>
+        <button type="button submit" class="btn btn-primary" id="main">Play</button>
+        <button type="button submit" class="btn btn-success" id="reverse">Reverse</button>
+      </div>
     </form>
     <div class="output">
 
