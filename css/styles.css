@@ -1,4 +1,4 @@
-.hidden {
+.hidden, .alert-primary, .alert-success {
   display: none;
 }
 
@@ -12,7 +12,7 @@ body {
   width: 80%;
 }
 
-#first {
+#first, #second {
   text-align: center;
 }
 
@@ -25,4 +25,10 @@ label[for=name] {
 
 #userName {
   margin-top: 10px;
+}
+
+#magic {
+  display: block;
+  margin: 10px auto 10px auto;
+  width: 70%;
 }

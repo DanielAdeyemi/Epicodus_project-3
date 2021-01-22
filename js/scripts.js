@@ -44,7 +44,9 @@ $(document).ready(function() {
       const input = parseInt($('#input').val());
       const output = roboger(input, name);
       //$('form')[0].reset();
-      $('.output').text(output);
+      $('.alert-primary').show();
+      $('.alert-success').hide();
+      $('#output1').text(output);
     });
 
     $('#reverse').click(function() {
@@ -52,7 +54,9 @@ $(document).ready(function() {
       const input = parseInt($('#input').val());
       const output = robogerReverse(input, name);
       //$('form')[0].reset();
-      $('.output').text(output);
+      $('.alert-success').show();
+      $('.alert-primary').hide();
+      $('#output2').text(output);
     });
   });
 });
