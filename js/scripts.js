@@ -14,6 +14,14 @@ function roboger(number) {
   return array;
 }
 
+function robogerReverse(number) {
+  const array = [];
+  for (let i = number; i >= 0; i--) {
+    array.push(` ${i}`);
+  }
+  return array;
+}
+
 
 $(document).ready(function() {
   $('#main').click(function() {
@@ -23,6 +31,7 @@ $(document).ready(function() {
     $('form')[0].reset();
     $('.output').text(output);
   });
+
   $('#reverse').click(function() {
     event.preventDefault();
     const input = parseInt($('#input').val());
