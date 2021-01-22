@@ -14,10 +14,19 @@ This project conclude my third week at Epicodus as a full-time student. **The go
 |  # | Test  | Expect  |  
 |:---:|:---:|:---|
 |  1 |  should return numbers from 0 to input (included) | roboger(5).toEqual(0, 1, 2, 3, 4, 5)  | 
-|  2 | if number contains 1(as a digit) - replace it with "Beep!"  | roboger(10).toEqual(0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9 "Beep!")  | 
-|  3 | if number contains 2(as a digit) - replace it with "Boop!"   |  roboger(12).toEqual(0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9 "Beep!", "Beep!", "Boop!") | 
-|  4 | if number contains 3(as a digit) - replace it with "Won't you be my neighbor?"  |  roboger(13).toEqual(0, "Beep!", 2, "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9 "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?") | 
-
+|  2 | if number contains 1(as a digit) - replace it with "Beep!"  | roboger(10).toEqual(0, "Beep!", 2, 3, 4, 5, 6, 7, 8, 9, "Beep!")  | 
+|  3 | if number contains 2(as a digit) - replace it with "Boop!"   |  roboger(12).toEqual(0, "Beep!", "Boop!", 3, 4, 5, 6, 7, 8, 9 "Beep!", "Beep!", "Boop!") | 
+|  4 | if number contains 3(as a digit) - replace it with "Won't you be my neighbor?"  |  roboger(13).toEqual(0, "Beep!", "Boop!", "Won't you be my neighbor?", 4, 5, 6, 7, 8, 9 "Beep!", "Beep!", "Boop!", "Won't you be my neighbor?") | 
+***
+***
+**Describe:** `robogerReverse()`   
+|  # | Test  | Expect  |  
+|:---:|:---:|:---|
+|  1 |  should return numbers from input to 0 | robogerReverse(5).toEqual(5, 4, 3, 2, 1, 0)  | 
+|  2 | if number contains 1(as a digit) - replace it with "Beep!"  | robogerReverse(10).toEqual("Beep!", 9, 8, 7, 6, 5, 4, 3, 2 "Beep!", 0)  | 
+|  3 | if number contains 2(as a digit) - replace it with "Boop!"   |  robogerReverse(12).toEqual("Boop!", "Beep!", "Beep!", 9, 8, 7, 6, 5, 4, 3 "Boop!", "Beep!", 0) | 
+|  4 | if number contains 3(as a digit) - replace it with "Won't you be my neighbor?"  |  robogerReverse(13).toEqual("Won't you be my neighbor?", "Boop!", "Beep!", "Beep!", 9, 8, 7, 6, 5, 4, "Won't you be my neighbor?" , "Boop!", "Beep!", 0) | 
+***
 
 ## *Setup instructions:*
 * Clone my repository from GitHub, using following [URL](https://github.com/DanielAdeyemi/Epicodus_project_2.git)
