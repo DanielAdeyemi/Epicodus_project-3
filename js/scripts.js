@@ -17,10 +17,11 @@ function roboger(number) {
 function robogerReverse(number) {
   const array = [];
   for (let i = number; i >= 0; i--) {
-    if (/1+/.test(i)) {
+    if (/2+/.test(i)) {
+      array.push(' Boop!');
+    } else if (/1+/.test(i)) {
       array.push(' Beep!');
     } else {
-
       array.push(` ${i}`);
     }
   }
@@ -33,7 +34,7 @@ $(document).ready(function() {
     event.preventDefault();
     const input = parseInt($('#input').val());
     const output = roboger(input);
-    $('form')[0].reset();
+    //$('form')[0].reset();
     $('.output').text(output);
   });
 
