@@ -13,29 +13,36 @@
 
 <body>
   <div class="container">
-    <form id="first">
-      <div class="mb-3">
-        <img src="img/intro.png" alt="Greeting picture" id="greet">
-        <label for="name" class="form-label">You are about to see some magic, but before - we want to know your name!</label>
-        <input type="text" class="form-control" id="name" placeholder="Enter your name, please" autocomplete="off" autofocus required>
-        <button type="button submit" class="btn btn-primary" id="userName">Let's go</button>
+    <main>
+      <form id="first">
+        <div class="mb-3">
+          <img src="img/intro.png" alt="Greeting picture" id="greet">
+          <label for="name" class="form-label">You are about to see some magic, but before - we want to know your name!</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your name, please" autocomplete="off" autofocus required>
+          <button type="button submit" class="btn btn-primary" id="userName">Let's go</button>
+        </div>
+      </form>
+      <form id="second">
+        <div class="mb-3 hidden">
+          <h2>Hi,<span id="outName"></span>! Now it's time to check out some magic. Please, insert any number in a form below.</h2>
+          <img src="img/magic.jpg" alt="picture with magic exponent" id="magic">
+          <input type="number" name="number" id="input" min="1" placeholder="Input your number here" autofocus autocomplete="off" step="1" required>
+          <button type="button submit" class="btn btn-primary" id="main">Check out magic</button>
+          <button type="button submit" class="btn btn-success" id="reverse">Check out reverse magic</button>
+        </div>
+      </form>
+      <div class="alert alert-primary" role="alert">
+        <img src="img/arrow1.jpg" alt="image of arrow">
+        <p id="output1"></p>
       </div>
-    </form>
-    <form id="second">
-      <div class="mb-3 hidden">
-        <h2>Hi,<span id="outName"></span>! Now it's time to check out some magic. Please, insert any number in a form below.</h2>
-        <img src="img/magic.jpg" alt="picture with magic exponent" id="magic">
-        <input type="number" name="number" id="input" min="1" placeholder="Input your number here" autofocus autocomplete="off" step="1" required>
-        <button type="button submit" class="btn btn-primary" id="main">Play</button>
-        <button type="button submit" class="btn btn-success" id="reverse">Reverse</button>
+      <div class="alert alert-success" role="alert">
+        <img src="img/arrow2.png" alt="reverse arrow image">
+        <p id="output2"></p>
       </div>
-    </form>
-    <div class="alert alert-primary" role="alert">
-      <p id="output1"></p>
-    </div>
-    <div class="alert alert-success" role="alert">
-      <p id="output2"></p>
-    </div>
+    </main>
+    <footer>
+
+    </footer>
   </div>
 </body>
 

@@ -6,13 +6,19 @@ body {
   background-color: whitesmoke;
 }
 
+h2 {
+  margin: 10px auto 30px auto;
+  font-style: italic;
+  color: purple;
+}
+
 #greet {
   display: block;
   margin: 50px auto 10px auto;
   width: 80%;
 }
 
-#first, #second {
+#first, #second, .alert {
   text-align: center;
 }
 
@@ -20,7 +26,7 @@ label[for=name] {
   font-size: large;
   font-weight: bold;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: blueviolet;
+  color: rgb(29, 10, 48);
 }
 
 #userName {
@@ -31,4 +37,9 @@ label[for=name] {
   display: block;
   margin: 10px auto 10px auto;
   width: 70%;
+}
+
+.alert-primary>img, .alert-success>img {
+  width: 200px;
+  margin-bottom: 5px;
 }
