@@ -3,11 +3,30 @@
 #### *by* ***Daniel Adeyemi*** *(01/22/2021)*
 * * *
 ## *Description:*   
-This project conclude my third week at Epicodus as a full-time student. **The goal** of the project is to build an application that takes a number from a user and returns a range of numbers from 0 to the user inputted number with the following exceptions:
+#### *Want to play some number game? With a click of a button some of your numbers will be replaced with phrases. It's up to you how far you want to go!*   
+This project conclude my third week at Epicodus as a full-time student. **The goal** of the project is to build an application that takes a number from a user and returns a range of numbers from 0 to the user inputted number (or from the input down to 0 for reverse method) with the following exceptions:
 * Numbers that contain a 1: all digits are replaced (all digits) with "Beep!"
 * Numbers that contain a 2: all digits are replaced (all digits) with "Boop!"
 * Numbers that contain a 3: all digits are replaced (all digits) with "Won't you be my neighbor?"
 * Exceptions for 3 have the highest priority, for 2 - second priority, and for 1 - last priority.
+
+## *Software Requirements:*
+* up to date internet browser ([Safari](https://www.apple.com/safari/), [Mozzila](https://www.mozilla.org/en-US/), [Chrome](https://www.google.com/intl/en/chrome/))
+* (***optional***) code editor like [VSCode](https://code.visualstudio.com/) to view my code 
+
+## *Setup instructions:*
+#### From the web:
+* Go to my GitHub repository, using following [URL](https://github.com/DanielAdeyemi/Epicodus_project-3.git).
+* Click the "Code" and click the 'Download zip' option.
+* Unzip the file, navigate to the root directory (week-3-project folder).
+* open ***'index.html'*** file with your web browser.
+#### From the terminal: 
+* Clone my repository from GitHub using `git clone https://github.com/DanielAdeyemi/Epicodus_project-3.git`
+* Navigate to the downloaded folder using ***cd*** command
+* Execute **code .** command in your terminal and it will open all source code in your code editor.    
+*Note: please, make sure that you are inside project directory!*
+#### GitHub pages:
+* If you just want to check my page without open your editor/ terminal - click on this [GitHub page link](https://danieladeyemi.github.io/Epicodus_project-3/)
 
 ## *Tests:*
 **Describe:** `roboger()`   
@@ -27,13 +46,6 @@ This project conclude my third week at Epicodus as a full-time student. **The go
 |  3 | if number contains 2(as a digit) - replace it with "Boop!"   |  robogerReverse(12).toEqual("Boop!", "Beep!", "Beep!", 9, 8, 7, 6, 5, 4, 3 "Boop!", "Beep!", 0) | 
 |  4 | if number contains 3(as a digit) - replace it with "Won't you be my neighbor?"  |  robogerReverse(13).toEqual("Won't you be my neighbor?", "Boop!", "Beep!", "Beep!", 9, 8, 7, 6, 5, 4, "Won't you be my neighbor?" , "Boop!", "Beep!", 0) | 
 ***
-
-## *Setup instructions:*
-* Clone my repository from GitHub, using following [URL](https://github.com/DanielAdeyemi/Epicodus_project_2.git)
-* If you want to see any specific part of my code, go to ***index.html*** or ***any folder/file you find interesting***
-* If you want just open my web-page in your browser, execute **open index.html** command in your terminal.    
-*Note: please, make sure that you are inside project directory!*
-* If you just want to check my page without open your editor/ terminal - click on this [GitHub page](https://danieladeyemi.github.io/Epicodus_project_2/) link
 
 ## *Technologies used:*
 * HTML
