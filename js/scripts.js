@@ -17,7 +17,12 @@ function roboger(number) {
 function robogerReverse(number) {
   const array = [];
   for (let i = number; i >= 0; i--) {
-    array.push(` ${i}`);
+    if (/1+/.test(i)) {
+      array.push(' Beep!');
+    } else {
+
+      array.push(` ${i}`);
+    }
   }
   return array;
 }
