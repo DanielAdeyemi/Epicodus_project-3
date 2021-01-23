@@ -18,7 +18,7 @@ This project conclude my third week at Epicodus as a full-time student. **The go
 #### From the web:
 * Go to my GitHub repository, using following [URL](https://github.com/DanielAdeyemi/Epicodus_project-3.git).
 * Click the "Code" and click the 'Download zip' option.
-* Unzip the file, navigate to the root directory (week-3-project folder).
+* Unzip the file, navigate to the root directory (project3 folder).
 * open ***'index.html'*** file with your web browser.
 #### From the terminal: 
 * Clone my repository from GitHub using `git clone https://github.com/DanielAdeyemi/Epicodus_project-3.git`
