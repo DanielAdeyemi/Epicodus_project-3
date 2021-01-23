@@ -48,7 +48,6 @@ $(document).ready(function() {
         $('.alert-danger').show();
         $('#second')[0].reset();
       } else {
-
         const output = roboger(input, name);
         $('#second')[0].reset();
         $('.alert-primary').show();
