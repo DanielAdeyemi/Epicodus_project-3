@@ -42,21 +42,38 @@ $(document).ready(function() {
     $('#main').click(function() {
       event.preventDefault();
       const input = parseInt($('#input').val());
-      const output = roboger(input, name);
-      //$('form')[0].reset();
-      $('.alert-primary').show();
-      $('.alert-success').hide();
-      $('#output1').text(output);
+      if (isNaN(input)) {
+        $('.alert-primary').hide();
+        $('.alert-success').hide();
+        $('.alert-danger').show();
+        $('#second')[0].reset();
+      } else {
+
+        const output = roboger(input, name);
+        $('#second')[0].reset();
+        $('.alert-primary').show();
+        $('.alert-danger').hide();
+        $('.alert-success').hide();
+        $('#output1').text(output);
+      }
     });
 
     $('#reverse').click(function() {
       event.preventDefault();
       const input = parseInt($('#input').val());
-      const output = robogerReverse(input, name);
-      //$('form')[0].reset();
-      $('.alert-success').show();
-      $('.alert-primary').hide();
-      $('#output2').text(output);
+      if (isNaN(input)) {
+        $('.alert-primary').hide();
+        $('.alert-success').hide();
+        $('.alert-danger').show();
+        $('#second')[0].reset();
+      } else {
+        const output = robogerReverse(input, name);
+        $('#second')[0].reset();
+        $('.alert-success').show();
+        $('.alert-danger').hide();
+        $('.alert-primary').hide();
+        $('#output2').text(output);
+      }
     });
   });
 });
