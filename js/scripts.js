@@ -43,36 +43,30 @@ $(document).ready(function() {
       event.preventDefault();
       const input = parseInt($('#input').val());
       if (isNaN(input)) {
-        $('.alert-primary').hide();
-        $('.alert-success').hide();
+        $('.alert-primary, .alert-success').hide();
         $('.alert-danger').show();
-        $('#second')[0].reset();
       } else {
         const output = roboger(input, name);
-        $('#second')[0].reset();
         $('.alert-primary').show();
-        $('.alert-danger').hide();
-        $('.alert-success').hide();
+        $('.alert-danger, .alert-success').hide();
         $('#output1').text(output);
       }
+      $('#second')[0].reset();
     });
 
     $('#reverse').click(function() {
       event.preventDefault();
       const input = parseInt($('#input').val());
       if (isNaN(input)) {
-        $('.alert-primary').hide();
-        $('.alert-success').hide();
+        $('.alert-primary, .alert-success').hide();
         $('.alert-danger').show();
-        $('#second')[0].reset();
       } else {
         const output = robogerReverse(input, name);
-        $('#second')[0].reset();
         $('.alert-success').show();
-        $('.alert-danger').hide();
-        $('.alert-primary').hide();
+        $('.alert-danger, .alert-primary').hide();
         $('#output2').text(output);
       }
+      $('#second')[0].reset();
     });
   });
 });
