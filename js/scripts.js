@@ -32,15 +32,15 @@ function robogerReverse(number, name) {
 
 
 $(document).ready(function() {
-  $('#first').submit(function() {
-    event.preventDefault();
+  $('#first').submit(function(event1) {
+    event1.preventDefault();
     const name = $('#name').val();
     $('#first').hide();
     $('#outName').text(name);
     $('.hidden').show();
 
-    $('#main').click(function() {
-      event.preventDefault();
+    $('#main').click(function(event2) {
+      event2.preventDefault();
       const input = parseInt($('#input').val());
       if (isNaN(input)) {
         $('.alert-primary, .alert-success').hide();
@@ -54,8 +54,8 @@ $(document).ready(function() {
       $('#second')[0].reset();
     });
 
-    $('#reverse').click(function() {
-      event.preventDefault();
+    $('#reverse').click(function(event3) {
+      event3.preventDefault();
       const input = parseInt($('#input').val());
       if (isNaN(input)) {
         $('.alert-primary, .alert-success').hide();
